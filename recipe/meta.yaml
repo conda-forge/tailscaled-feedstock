@@ -1,4 +1,4 @@
-{% set version = "1.64.2" %}
+{% set version = "1.66.0" %}
 
 package:
   name: tailscaled
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://github.com/tailscale/tailscale/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: e5e46f6b6b716b2c4696dce0b92dc2e36f02b06b7ad9f055042a820ad61b2a47
+    sha256: f26641a421b77e360dfb4ca7c3bc27ad2a4f3c537923eaff1d82d7fafd244682
     folder: release
   # Checkout git repo to obtain version string
   - git_url: https://github.com/tailscale/tailscale
@@ -14,7 +14,7 @@ source:
     folder: git
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
